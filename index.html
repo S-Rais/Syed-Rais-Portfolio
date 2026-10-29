@@ -321,7 +321,7 @@ footer span{color:var(--cyan)}
 @media(max-width:768px){
   nav{padding:1rem 1.5rem}
   .nav-links{display:none}
-  .hero,.section{padding:5rem 1.5rem}
+  .hero,section{padding:5rem 1.5rem}
   .hero-stats{gap:1.5rem}
   .projects-grid{grid-template-columns:1fr}
 }
@@ -353,17 +353,19 @@ footer span{color:var(--cyan)}
   <div class="hero-content">
     <div class="hero-badge"><span class="badge-dot"></span>Open to Opportunities · Bangalore, India</div>
     <h1 class="hero-name">Syed<br/><span class="highlight">Rais</span></h1>
-    <p class="hero-role"><strong>AI &amp; Data Science Engineer</strong> · Enthusiastic AI Developer · Problem Solver</p>
+    <p class="hero-role"><strong>AI/ML Engineer</strong> · AI Security · Full-Stack Developer</p>
     <p class="hero-description">
-      Building intelligent systems that bridge the gap between research and real-world impact.
-      Passionate about machine learning, NLP, backend engineering, and crafting products that make a difference.
+      I build machine-learning systems that hold up under attack. My main project, Sentinel AI, is a zero-trust
+      firewall for LLM agents that catches prompt injection and tool abuse with 93% detection at 0.91 precision.
+      Final-year B.Tech, AI &amp; Data Science, REVA University.
     </p>
     <div class="hero-actions">
       <a class="btn-primary" href="#projects">▸ View My Work</a>
+      <a class="btn-secondary" href="resume.pdf" target="_blank">⬇ Download Resume</a>
       <a class="btn-secondary" href="mailto:srais00001@gmail.com">✉ Get In Touch</a>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-num">4<span>+</span></div><div class="stat-label">AI Projects</div></div>
+      <div><div class="stat-num">5<span></span></div><div class="stat-label">AI Projects</div></div>
       <div><div class="stat-num">8.03<span></span></div><div class="stat-label">Current CGPA</div></div>
       <div><div class="stat-num">7<span>+</span></div><div class="stat-label">Certifications</div></div>
       <div><div class="stat-num">94<span>%</span></div><div class="stat-label">NIDS Accuracy</div></div>
@@ -391,7 +393,7 @@ footer span{color:var(--cyan)}
       <div class="skill-name">AI / Machine Learning</div>
       <div class="tags">
         <span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">Keras</span>
-        <span class="tag">NLTK</span><span class="tag">Scipy</span>
+        <span class="tag">NLTK</span><span class="tag">spaCy</span><span class="tag">SciPy</span><span class="tag">LLMs</span><span class="tag">Transformers</span>
         <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
       </div>
     </div>
@@ -400,7 +402,7 @@ footer span{color:var(--cyan)}
       <div class="skill-name">Frontend & Backend</div>
       <div class="tags">
         <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express.js</span>
-        <span class="tag">Flask</span><span class="tag">Django</span><span class="tag">REST APIs</span>
+        <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Django</span><span class="tag">REST APIs</span>
         <span class="tag">JWT Auth</span>
       </div>
     </div>
@@ -462,14 +464,14 @@ footer span{color:var(--cyan)}
     <div class="project-card reveal" style="transition-delay:.1s">
       <div class="project-header">
         <div>
-          <div class="project-title">Personal Financial ERP Platform</div>
+          <div class="project-title">AI-Powered Inventory Management Platform</div>
           <div class="project-tech">React.js · Node.js · Express · MongoDB · Python</div>
         </div>
         <div class="project-num">02</div>
       </div>
       <div class="project-body">
         <ul class="project-points">
-          <li>Full-stack ERP app with AI-powered inventory insights and real-time CRUD dashboard</li>
+          <li>Full-stack app for real-time inventory tracking with AI-powered insights and a CRUD dashboard</li>
           <li>ML recommendation engine forecasting stock with <span class="project-metric">~85% accuracy</span></li>
           <li>Secure REST APIs with JWT authentication &amp; MongoDB aggregation pipelines</li>
           <li>Interactive Chart.js visualizations and drag-and-drop data upload</li>
@@ -507,11 +509,28 @@ footer span{color:var(--cyan)}
       </div>
       <div class="project-body">
         <ul class="project-points">
-          <li>Bilingual NLP chatbot (English ↔ Malayalam) for <span class="project-metric">500+ rural users</span></li>
+          <li>Bilingual NLP chatbot (English ↔ Malayalam) for <span class="project-metric">500+ rural farmers</span></li>
           <li>Voice + text input with real-time translation &amp; agricultural advisory</li>
           <li>Multi-turn dialogue with contextual conversation history management</li>
           <li>User testing improved satisfaction by <span class="project-metric">30%</span> through iterative NLP tuning</li>
           <li>Led cross-functional team via Git workflow, daily stand-ups &amp; sprint planning</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="project-card reveal" style="transition-delay:.4s">
+      <div class="project-header">
+        <div>
+          <div class="project-title">Resource-Aware Intrusion Detection for IoMT Fog Nodes</div>
+          <div class="project-tech">Final-Year Major Project · IoMT · Fog / Edge Computing · ML</div>
+        </div>
+        <div class="project-num">05</div>
+      </div>
+      <div class="project-body">
+        <ul class="project-points">
+          <li>Intrusion detection for Internet of Medical Things fog nodes that balances detection accuracy against the CPU and memory limits of edge hardware</li>
+          <li>Literature survey and detailed system design complete; implementation and evaluation <span class="project-metric">in progress</span></li>
         </ul>
       </div>
     </div>
@@ -572,11 +591,11 @@ footer span{color:var(--cyan)}
   <p class="section-sub">Proven results in competitive programming, cybersecurity, and AI certification.</p>
   <div class="certs-grid">
     <div class="cert-card reveal">
-      <div class="cert-emoji">🏆</div>
+      <div class="cert-emoji">🥉</div>
       <div>
-        <div class="cert-title">CodeQuest 2.0 — Winner</div>
+        <div class="cert-title">CodeQuest 2.0 — 3rd Place</div>
         <div class="cert-org">Reva University</div>
-        <div class="cert-desc">Secured 1st place in competitive programming among 100+ participants. Multi-round algorithmic challenges under pressure.</div>
+        <div class="cert-desc">Secured 3rd place in competitive programming among 100+ participants. Multi-round algorithmic challenges under pressure.</div>
       </div>
     </div>
     <div class="cert-card reveal" style="transition-delay:.1s">
@@ -676,17 +695,17 @@ footer span{color:var(--cyan)}
   <h2 class="section-title">Get In Touch</h2>
   <p class="section-sub" style="margin:0 auto 0">I'm actively seeking internships and full-time roles in AI, ML, and full-stack development. Let's build something great together.</p>
   <div class="contact-grid reveal">
-    <a class="contact-item" href="mailto:legendsr0108@gmail.com">
+    <a class="contact-item" href="mailto:srais00001@gmail.com">
       <div class="contact-icon">✉️</div>
       <div class="contact-label">Email</div>
-      <div class="contact-value">legendsr0108@gmail.com</div>
+      <div class="contact-value">srais00001@gmail.com</div>
     </a>
     <a class="contact-item" href="tel:+918123904426">
       <div class="contact-icon">📞</div>
       <div class="contact-label">Phone</div>
-      <div class="contact-value">+91 8123904426</div>
+      <div class="contact-value">+91 81239 04426</div>
     </a>
-    <a class="contact-item" href="https://www.linkedin.com/in/s-rais-1a8b2c005" target="_blank">
+    <a class="contact-item" href="https://www.linkedin.com/in/syedrais" target="_blank">
       <div class="contact-icon">💼</div>
       <div class="contact-label">LinkedIn</div>
       <div class="contact-value">linkedin.com/in/syedrais</div>
@@ -694,7 +713,7 @@ footer span{color:var(--cyan)}
     <a class="contact-item" href="https://github.com/S-Rais" target="_blank">
       <div class="contact-icon">⌨️</div>
       <div class="contact-label">GitHub</div>
-      <div class="contact-value">github.com/syedrais</div>
+      <div class="contact-value">github.com/S-Rais</div>
     </a>
   </div>
 </section>
